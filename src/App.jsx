@@ -124,6 +124,9 @@ const App = () => {
 
       <Footer style={{ textAlign: "center" }}>
         <Text style={{ display: "block" }}>
+        Use a web3 browser to view Markrt Items ⭐️ metamask.io
+      </Text>
+        <Text style={{ display: "block" }}>
              metaverse ⭐️ built for the community by
         </Text>
 
