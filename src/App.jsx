@@ -71,7 +71,7 @@ const App = () => {
 
     <Layout style={{ height: "100vh", overflow: "auto", overflowX:"auto"}}>
       <Router>
-      <MediaQuery minWidth={450}>
+      <MediaQuery minWidth={50}>
         <Header style={styles.header}>
           <Logo/>
           <SearchCollections setInputValue={setInputValue}/>
