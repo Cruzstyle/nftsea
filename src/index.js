@@ -17,7 +17,7 @@ const Application = () => {
       <MoralisProvider  appId={APP_ID}
       serverUrl={SERVER_URL}>
         <MoralisDappProvider>
-        <MediaQuery minWidth={50}>
+        <MediaQuery minWidth={300}>
            <App/>
     </MediaQuery>
         </MoralisDappProvider>
