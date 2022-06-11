@@ -32,6 +32,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: white;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 ul[class],
