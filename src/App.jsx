@@ -32,7 +32,7 @@ const styles = {
     padding: "10px",
   },
   header: {
-    position: "auto",
+    position: "sticky",
     zIndex: 1,
     width: "100%",
     background: "#fff",
