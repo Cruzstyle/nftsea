@@ -71,7 +71,7 @@ const App = () => {
 
     <Layout style={{ height: "100vh", overflow: "auto", overflowX:"auto"}}>
       <Router>
-      <MediaQuery minWidth={50}>
+  
         <Header style={styles.header}>
           <Logo/>
           <SearchCollections setInputValue={setInputValue}/>
@@ -104,7 +104,7 @@ const App = () => {
             <Account />
           </div>
         </Header>
-      </MediaQuery>
+   
         <div style={{ textAlign: "center", fontWeight: "Bold", marginTop: "35px", fontSize:"23px"}}> <Latest/> </div>
         <div style={styles.content}>
           <Switch>
