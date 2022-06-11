@@ -123,9 +123,15 @@ const App = () => {
       </Router>
 
       <Footer style={{ textAlign: "center" }}>
-        <Text style={{ display: "block" }}>
-        Use a web3 browser to view Markrt Items ⭐️ <a target="_blank" rel="noopener noreferrer" href="https://metamask.io/"> metamask.io</a>
-      </Text>
+     <Text style={{ display: "block" }}>
+        Use a web3 browser to view Markrt Items ⭐️
+       <a 
+         target="_blank" 
+         rel="noopener noreferrer"
+         href="https://metamask.io/"
+      > metamask.io 
+      </a>
+     </Text>
         <Text style={{ display: "block" }}>
              metaverse ⭐️ built for the community by
         </Text>
