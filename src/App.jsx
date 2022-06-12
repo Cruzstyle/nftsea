@@ -124,7 +124,7 @@ const App = () => {
 
       <Footer style={{ textAlign: "center" }}>
      <Text style={{ display: "block" }}>
-        Use a web3 browser to view Markrt Items ⭐️
+        Use a web3 browser to view Market Items ⭐️
        <a 
          target="_blank" 
          rel="noopener noreferrer"
