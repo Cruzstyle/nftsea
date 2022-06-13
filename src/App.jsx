@@ -50,7 +50,7 @@ const styles = {
     alignItems: "center",
     fontSize: "15px",
     fontWeight: "600",
-    position: "auto",
+    position: "sticky",
   },
 };
 const App = () => {
