@@ -85,14 +85,14 @@ const handleMediaQueryChange = (matches) => {
       <Router>
   
         <Header style={styles.header}>
-          <MediaQuery minWidth={255} onChange={handleMediaQueryChange}><Logo/></MediaQuery>
-          <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}> <Log/></MediaQuery>
+          <MediaQuery minWidth={355} onChange={handleMediaQueryChange}><Logo/></MediaQuery>
+          <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}> <Log/></MediaQuery>
           
-           <MediaQuery minWidth={255} onChange={handleMediaQueryChange}> <SearchCollections setInputValue={setInputValue} /></MediaQuery>
-           <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}><SearchCollection setInputValue={setInputValue}/></MediaQuery>
+           <MediaQuery minWidth={355} onChange={handleMediaQueryChange}> <SearchCollections setInputValue={setInputValue} /></MediaQuery>
+           <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}><SearchCollection setInputValue={setInputValue}/></MediaQuery>
 
 
-          <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}><Menu
+          <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}><Menu
               theme="light"
               mode="horizontal"
               style={{
@@ -129,7 +129,7 @@ const handleMediaQueryChange = (matches) => {
             </MediaQuery>
 
 
-<MediaQuery minWidth={255} onChange={handleMediaQueryChange}>
+<MediaQuery minWidth={355} onChange={handleMediaQueryChange}>
           <Menu
             theme="light"
             mode="horizontal"
@@ -167,8 +167,8 @@ const handleMediaQueryChange = (matches) => {
          </Menu>
 </MediaQuery>
         </Header>
-     <div style={{ textAlign: "center", fontWeight: "Bold", marginTop: "35px", fontSize:"23px"}}>  <MediaQuery minWidth={255} onChange={handleMediaQueryChange}> <Latest/></MediaQuery></div>
-          <div style={{ marginLeft:"10px", textAlign: "center", fontWeight: "Bold", marginTop: "15px", fontSize:"9.5px"}}>  <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}> <Latest/></MediaQuery></div>
+     <div style={{ textAlign: "center", fontWeight: "Bold", marginTop: "35px", fontSize:"23px"}}>  <MediaQuery minWidth={355} onChange={handleMediaQueryChange}> <Latest/></MediaQuery></div>
+          <div style={{ marginLeft:"10px", textAlign: "center", fontWeight: "Bold", marginTop: "15px", fontSize:"9.5px"}}>  <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}> <Latest/></MediaQuery></div>
         <div style={styles.content}>
           <Switch>
             <Route path="/nftBalance">
@@ -185,7 +185,7 @@ const handleMediaQueryChange = (matches) => {
         </div>
       </Router>
 <div>
-<MediaQuery minWidth={255} onChange={handleMediaQueryChange}>
+<MediaQuery minWidth={355} onChange={handleMediaQueryChange}>
       <Footer style={{ textAlign: "center" }}>
      <Text style={{ display: "block" }}>
         Use a web3 browser to view Market Items ⭐️
@@ -226,7 +226,7 @@ const handleMediaQueryChange = (matches) => {
         </Text>
       </Footer>
 </MediaQuery>
-<MediaQuery maxWidth={255} onChange={handleMediaQueryChange}>
+<MediaQuery maxWidth={355} onChange={handleMediaQueryChange}>
       <Footer style={{ textAlign: "center" }}>
       <Text style={{ display: "block", fontSize:"9px" }}>
         Use a web3 browser to view Markrt Items ⭐️ metamask.io
