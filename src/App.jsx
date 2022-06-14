@@ -51,7 +51,7 @@ const styles = {
     alignItems: "center",
     fontSize: "15px",
     fontWeight: "600",
-    position: "sticky",
+    position: "auto",
   },
   headerRight1: {
     display: "flex",
@@ -59,8 +59,7 @@ const styles = {
     alignItems: "center",
     fontSize: "7px",
     fontWeight: "200",
-    position: "sticky",
-    zIndex: 1,
+    position: "auto",
   },
 };
 const App = () => {
@@ -137,7 +136,7 @@ const handleMediaQueryChange = (matches) => {
               display: "flex",
               fontSize: "17px",
               fontWeight: "500",
-              marginLeft: "50px",
+              marginLeft: "30px",
               width: "100%",
             }}
             defaultSelectedKeys={["nftMarket"]}
@@ -187,7 +186,7 @@ const handleMediaQueryChange = (matches) => {
 <div>
 <MediaQuery minWidth={355} onChange={handleMediaQueryChange}>
       <Footer style={{ textAlign: "center" }}>
-     <Text style={{ display: "block" }}>
+     <Text style={{ display: "block", fontSize:"10px" }}>
         Use a web3 browser to view Market Items ⭐️
        <a 
          target="_blank" 
@@ -197,11 +196,11 @@ const handleMediaQueryChange = (matches) => {
       </a>
   
      </Text>
-        <Text style={{ display: "block" }}>
+        <Text style={{ display: "block", fontSize:"10px" }}>
             NFT metaverse ⭐️ built for the community by
         </Text>
 
-        <Text style={{ display: "block" }}>
+        <Text style={{ display: "block", fontSize:"10px" }}>
 
           <a
             target="_blank"
@@ -212,18 +211,9 @@ const handleMediaQueryChange = (matches) => {
           </a>
           <Text> Decentralized NFT Market place</Text>
         </Text>
-        <Text> Zero platform fees !</Text>
+        <Text style={{ display: "block", fontSize:"10px" }}> Zero platform fees !</Text>
 
-        <Text style={{ display: "block" }}>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://moralis.io?utm_source=boilerplatehosted&utm_medium=todo&utm_campaign=ethereum-boilerplat"
-          >
-
-          </a>
-        </Text>
+    
       </Footer>
 </MediaQuery>
 <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}>
@@ -256,7 +246,7 @@ const handleMediaQueryChange = (matches) => {
 };
 export const Latest = () =>(
   <div>
-  <Text style={{ display: "block", textAlign: "center" }}>
+  <Text style={{ display: "block", textAlign: "center", fontSize: "10px", }}>
     <Text> Top collections over </Text>
     <a
       target="_blank"
