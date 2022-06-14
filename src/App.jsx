@@ -31,6 +31,7 @@ const styles = {
     color: "#041836",
     marginTop: "40px",
     padding: "10px",
+    marginLeft:"25px",
   },
   header: {
     position: "sticky",
@@ -84,14 +85,14 @@ const handleMediaQueryChange = (matches) => {
       <Router>
   
         <Header style={styles.header}>
-          <MediaQuery minWidth={355} onChange={handleMediaQueryChange}><Logo/></MediaQuery>
-          <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}> <Log/></MediaQuery>
+          <MediaQuery minWidth={55} onChange={handleMediaQueryChange}><Logo/></MediaQuery>
+          <MediaQuery maxWidth={3553} onChange={handleMediaQueryChange}> <Log/></MediaQuery>
           
            <MediaQuery minWidth={355} onChange={handleMediaQueryChange}> <SearchCollections setInputValue={setInputValue} /></MediaQuery>
-           <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}><SearchCollection setInputValue={setInputValue}/></MediaQuery>
+           <MediaQuery maxWidth={1024} onChange={handleMediaQueryChange}><SearchCollection setInputValue={setInputValue}/></MediaQuery>
 
 
-          <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}><Menu
+          <MediaQuery maxWidth={1024} onChange={handleMediaQueryChange}><Menu
               theme="light"
               mode="horizontal"
               style={{
