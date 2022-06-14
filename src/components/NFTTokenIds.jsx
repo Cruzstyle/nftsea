@@ -8,6 +8,7 @@ import {
 import { useWeb3Transfer } from "react-moralis";
 import { useMoralisWeb3Api, useMoralisWeb3ApiCall } from "react-moralis";
 import { Card, Image, Tooltip, Modal, Badge, Alert, Spin } from "antd";
+import MediaQuery from 'react-responsive'
 import { useNFTTokenIds } from "hooks/useNFTTokenIds";
 import {
   FileSearchOutlined,
@@ -139,7 +140,9 @@ const [values, setValues] = useState(true);
 
   }
 
-
+  const handleMediaQueryChange = (matches) => {
+      // matches will be true or false based on the value for the media query
+    }
 
   const { fetch, error, isFetching } = useWeb3Transfer({
     type: "native",
@@ -184,6 +187,8 @@ const [values, setValues] = useState(true);
                 <div style={{ marginBottom: "10px" }}></div>
               </>
             )}
+           <div>
+            <MediaQuery minWidth={250} onChange={handleMediaQueryChange}>
             <div style={styles.banner}>
               <Image
                 preview={true}
@@ -208,12 +213,62 @@ const [values, setValues] = useState(true);
                 </>
               </div>
             </div>
+              </MediaQuery>
+
+
+
+              <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}>
+              <div style={{  display: "flex",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+                margin: "0 auto",
+                width: "250px",
+                borderRadius: "10px",
+                height: "70px",
+                marginBottom: "40px",
+                paddingBottom: "20px",
+                borderBottom: "solid 1px #e3e3e3",}}>
+                <Image
+                  preview={true}
+                  src={NFTTokenIds[0]?.image || "error"}
+                  fallback={fallbackImg}
+                  alt=""
+                   style={{  height: "55px",
+                     width: "55px",
+                     borderRadius: "50%",
+                     positon: "relative",
+                     marginTop: "-55px",
+                     border: "solid 4px white",}}
+                />
+                <div style={{color: "#041836",
+                fontSize: "11px",
+                fontWeight: "bold",}}>
+                  <>
+                    <div>{`${NFTTokenIds[0]?.name}`}</div>
+                    <div
+                      style={{
+                        fontSize: "9.5px",
+                        color: "#9c9c9c",
+                        fontWeight: "normal",
+                      }}
+                    >
+                      Collection Size: {`${totalNFTs}`}
+
+                    </div>
+                  </>
+                </div>
+              </div>
+                </MediaQuery>
+              </div>
           </>
+
         )}
 
         <div style={styles.NFTs}>
           {inputValue === "explore" &&
             NFTCollections?.map((nft, index) => (
+             <div>
+          <MediaQuery minWidth={255} onChange={handleMediaQueryChange}>
               <Card
                 hoverable
                 actions={[
@@ -237,13 +292,45 @@ const [values, setValues] = useState(true);
 
               >
                 <Meta title={nft.name} />
-
-
               </Card>
+              </MediaQuery>
+
+
+              <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}>
+                  <Card
+                    hoverable
+                    actions={[
+                      <Tooltip title="View Collection">
+                        <RightCircleOutlined
+                          onClick={() => setInputValue(nft?.addrs)}
+                        />
+                      </Tooltip>,
+                    ]}
+                    style={{ width: 75, border: "2px solid #e7eaf3" }}
+                    cover={
+                      <Image
+                        preview={false}
+                        src={nft?.image || "error"}
+                        fallback={fallbackImg}
+                        alt=""
+                        style={{ height: "45px" }}
+                      />
+                    }
+                    key={index}
+
+                  >
+                    <Meta title={nft.name}
+                    style={{ fontSize: "2px", fontWeight:"light"}}
+                    />
+                  </Card>
+             </MediaQuery>
+
+              </div>
+
             ))}
 
           {inputValue !== "explore" &&
-            NFTTokenIds.slice(0, 120).map((nft, index) => (
+            NFTTokenIds.slice(15, 160).map((nft, index) => (
               <Card
                 hoverable
                 actions={[
@@ -309,14 +396,14 @@ const [values, setValues] = useState(true);
           </Modal>
          )
           : (
+         <div>
+          <MediaQuery minWidth={250} onChange={handleMediaQueryChange}>
           <Modal
             title={`Buy ${nftToBuy?.name} : ID ${nftToBuy?.token_id}   `}
             visible={visible}
             onCancel={() => setVisibility(false)}
             onOk={() => fetch()}
           >
-
-
           <ul>
           <img
             src={nftToBuy?.image}
@@ -366,7 +453,7 @@ const [values, setValues] = useState(true);
             {timeStamp}</li></li>
 
             <button style={{
-                    marginLeft: "300px",
+                    marginLeft: "100px",
                      borderRadius: "5px",
                      borderColor:"#48F8F8",
                      backgroundColor: " #9CF4F4 ",
@@ -391,7 +478,7 @@ const [values, setValues] = useState(true);
                   <h5 style={{
            backgroundColor: "#C3F1F1",
            borderRadius: "26px",
-           width: "74%",
+           width: "100%",
            floatRight: "60px",
            fontWeight: "light",
            fontSize: "14px",
@@ -409,6 +496,121 @@ const [values, setValues] = useState(true);
           </div>
 
           </Modal>
+          </MediaQuery>
+
+
+
+
+
+
+
+          <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}>
+          <Modal
+            title={`Buy ${nftToBuy?.name} : ID ${nftToBuy?.token_id}   `}
+            style={{fontSize: "5px"}}
+            visible={visible}
+            onCancel={() => setVisibility(false)}
+            onOk={() => fetch()}
+          >
+          <ul>
+          <img
+            src={nftToBuy?.image}
+            style={{
+              width: "80px",
+              borderRadius: "10px",
+              marginBottom: "15px",
+              float: "left",
+              marginTop:"0px",
+              marginLeft:"0px",
+            }}
+          />
+            <li style={{
+                marginTop:"8px",
+                marginLeft: "85px",
+                listStyleType: "none",
+            }}><img
+              src={"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyNTZweCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTU2IDI1NiIgd2lkdGg9IjE1NnB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0iQ2xhc3NpYyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiPjxnIGlkPSJFdGhlcmV1bSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1NzAuMDAwMDAwLCAtNDEwLjAwMDAwMCkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1NzAuMDAwMDAwLCA0MTAuMDAwMDAwKSI+PHBhdGggZD0iTTAsMTI4IEw4MCwwIEw4MCw5My41MzU4MzcyIEwwLDEyOCBaIE0xNTYsMTI4IEw4MCw5My41ODA5NTczIEw4MCwwIEwxNTYsMTI4IFoiIGZpbGw9IiM4MjgzODQiIGlkPSJDb21iaW5lZC1TaGFwZSIvPjxwYXRoIGQ9Ik04MCwxNzYgTDAsMTMxLjAwMzk2IEw4MCw5NiBMODAsMTc2IFogTTE1NiwxMzEuMDExNDczIEw4MCwxNzYgTDgwLDk2IEwxNTYsMTMxLjAxMTQ3MyBaIiBmaWxsPSIjMzQzNTM1IiBpZD0iQ29tYmluZWQtU2hhcGUiLz48cGF0aCBkPSJNMCwxNDggTDgwLDE5NC4xODA3MTEgTDgwLDI1NiBMMCwxNDggWiBNMTU2LDE0OCBMODAsMjU2IEw4MCwxOTQuMTc1MzYxIEwxNTYsMTQ4IFoiIGZpbGw9IiM4MjgzODQiIGlkPSJDb21iaW5lZC1TaGFwZSIvPjxwb2x5Z29uIGZpbGw9IiMyRjMwMzAiIGlkPSJQYXRoLTMiIHBvaW50cz0iMTU2IDEyOCA4MCA5My41ODA5NTczIDgwIDAiLz48cG9seWdvbiBmaWxsPSIjMTMxMzEzIiBpZD0iUGF0aC01IiBwb2ludHM9IjE1NiAxMzEuMDExNDczIDgwIDk2IDgwIDE3NiIvPjxwb2x5Z29uIGZpbGw9IiMyRjMwMzAiIGlkPSJQYXRoLTciIHBvaW50cz0iMTU2IDE0OCA4MCAxOTQuMTc1MzYxIDgwIDI1NiIvPjwvZz48L2c+PC9nPjwvc3ZnPg=="}
+              style={{
+                height:"9px",
+              }}
+              alt="ETH"
+            /><li style={{
+              listStyleType: "none",
+              fontWeight: "bold",
+              fontSize:"5px",
+            }} > {prix}</li></li>
+            <li style={{
+              marginLeft: "85px",
+              marginTop:"11px",
+              fontSize:"5px",
+              listStyleType: "none",
+              fontWeight: "bold"
+            }}>Owner :<li  style={{
+              listStyleType: "none",
+              fontWeight: "bold",
+              fontSize:"3.5px"
+              }} > {owner}</li></li>
+            <li style={{
+              marginLeft: "85px",
+              marginTop:"18px",
+              listStyleType: "none",
+              fontSize:"5px",
+              fontWeight: "light",
+            }}>TimeStamp :<li  style={{
+              listStyleType: "none",
+              fontWeight: "bold",
+              fontSize:"3.5px",
+              }}  >
+            {timeStamp}</li></li>
+
+            <button style={{
+                    marginLeft: "20px",
+                    width:"30px",
+                    height:"15px",
+                    fontSize:"5px",
+                     borderRadius: "5px",
+                     borderColor:"#48F8F8",
+                     backgroundColor: " #9CF4F4 ",
+                    }}  onClick={() => fetch()} disabled={isFetching} >
+            Buy Asset
+           </button>
+
+          </ul>
+
+
+
+           <div>
+
+
+            </div>
+           <div>
+           <ul>
+             {
+              nftToBuy?.metadata?.attributes.map((trait) => (
+                  <div>
+                  <h5 style={{
+           backgroundColor: "#C3F1F1",
+           borderRadius: "20px",
+           width: "100%",
+           floatRight: "30px",
+           fontWeight: "light",
+           fontSize: "5px",
+           marginTop: "3px",
+           border: "1px solid #15b2e5",
+           padding: "10px",
+           textAlign: "center",
+         }} key={trait}> {`trait-type: ${trait.trait_type}       value: ${trait.value} `} </h5>
+
+
+                  </div>
+                ))
+             }
+           </ul>
+          </div>
+
+          </Modal>
+          </MediaQuery>
+          </div>
         )}
       </div>
     </>
