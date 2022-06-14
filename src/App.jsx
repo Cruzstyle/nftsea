@@ -57,7 +57,9 @@ const App = () => {
   const { isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } =
     useMoralis();
 
-
+const handleMediaQueryChange = (matches) => {
+        // matches will be true or false based on the value for the media query
+      }
 
   const [inputValue, setInputValue] = useState("explore");
 
@@ -97,15 +99,22 @@ const App = () => {
             <Menu.Item key="transactions">
               <NavLink to="/Transactions">📑 Your Transactions</NavLink>
             </Menu.Item>
-          </Menu>
+         
           <div style={styles.headerRight}>
+           <Menu.Item key="chains">
             <Chains />
+          </Menu.Item>
+          <Menu.Item key="native">
             <NativeBalance />
+          </Menu.Item>
+          <Menu.Item key="account">
             <Account />
+          </Menu.Item>
           </div>
+         </Menu>
         </Header>
-   
-        <div style={{ textAlign: "center", fontWeight: "Bold", marginTop: "35px", fontSize:"23px"}}> <Latest/> </div>
+     <div style={{ textAlign: "center", fontWeight: "Bold", marginTop: "35px", fontSize:"23px"}}>  <MediaQuery minWidth={250} onChange={handleMediaQueryChange}> <Latest/></MediaQuery></div>
+          <div style={{ marginLeft:"10px", textAlign: "center", fontWeight: "Bold", marginTop: "15px", fontSize:"9.5px"}}>  <MediaQuery maxWidth={250} onChange={handleMediaQueryChange}> <Latest/></MediaQuery></div>
         <div style={styles.content}>
           <Switch>
             <Route path="/nftBalance">
