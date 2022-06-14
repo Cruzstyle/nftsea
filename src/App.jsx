@@ -129,7 +129,7 @@ const handleMediaQueryChange = (matches) => {
             </MediaQuery>
 
 
-
+<MediaQuery minWidth={255} onChange={handleMediaQueryChange}>
           <Menu
             theme="light"
             mode="horizontal"
@@ -165,6 +165,7 @@ const handleMediaQueryChange = (matches) => {
           </Menu.Item>
           </div>
          </Menu>
+</MediaQuery>
         </Header>
      <div style={{ textAlign: "center", fontWeight: "Bold", marginTop: "35px", fontSize:"23px"}}>  <MediaQuery minWidth={255} onChange={handleMediaQueryChange}> <Latest/></MediaQuery></div>
           <div style={{ marginLeft:"10px", textAlign: "center", fontWeight: "Bold", marginTop: "15px", fontSize:"9.5px"}}>  <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}> <Latest/></MediaQuery></div>
