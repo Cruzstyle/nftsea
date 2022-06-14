@@ -13,6 +13,7 @@ import NFTBalance from "components/NFTBalance";
 import NFTTokenIds from "components/NFTTokenIds";
 import { Menu, Layout} from "antd";
 import SearchCollections from "components/SearchCollections";
+import  SearchCollection from "components/SearchCollection";
 import "antd/dist/antd.css";
 import NativeBalance from "components/NativeBalance";
 import "./style.css";
@@ -52,6 +53,15 @@ const styles = {
     fontWeight: "600",
     position: "sticky",
   },
+  headerRight1: {
+    display: "flex",
+    gap: "4px",
+    alignItems: "center",
+    fontSize: "7px",
+    fontWeight: "200",
+    position: "sticky",
+    zIndex: 1,
+  },
 };
 const App = () => {
   const { isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } =
@@ -77,7 +87,49 @@ const handleMediaQueryChange = (matches) => {
         <Header style={styles.header}>
           <MediaQuery minWidth={255} onChange={handleMediaQueryChange}><Logo/></MediaQuery>
           <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}> <Log/></MediaQuery>
-          <SearchCollections setInputValue={setInputValue}/>
+          
+           <MediaQuery minWidth={255} onChange={handleMediaQueryChange}> <SearchCollections setInputValue={setInputValue} /></MediaQuery>
+           <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}><SearchCollection setInputValue={setInputValue}/></MediaQuery>
+
+
+          <MediaQuery maxWidth={255} onChange={handleMediaQueryChange}><Menu
+              theme="light"
+              mode="horizontal"
+              style={{
+                display: "flex",
+                fontSize: "9.5px",
+                fontWeight: "400",
+                marginLeft: "13px",
+                width: "100%",
+              }}
+              defaultSelectedKeys={["nftMarket"]}
+            >
+            <Menu.Item key="nftMarket" onClick={() => setInputValue("explore")} >
+              <NavLink to="/NFTMarketPlace">🛒 Explore Market</NavLink>
+            </Menu.Item>
+            <Menu.Item key="nft">
+              <NavLink to="/nftBalance">🖼 Your Collection</NavLink>
+            </Menu.Item>
+            <Menu.Item key="transactions">
+              <NavLink to="/Transactions">📑 Your Transactions</NavLink>
+            </Menu.Item>
+
+          <div style={styles.headerRight1}>
+          <Menu.Item key="xhains">
+            <Chains />
+          </Menu.Item>
+          <Menu.Item key="yative">
+            <NativeBalance />
+          </Menu.Item>
+          <Menu.Item key="zccount">
+            <Account />
+          </Menu.Item>
+          </div>
+            </Menu>
+            </MediaQuery>
+
+
+
           <Menu
             theme="light"
             mode="horizontal"
