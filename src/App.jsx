@@ -136,7 +136,7 @@ const handleMediaQueryChange = (matches) => {
               display: "flex",
               fontSize: "17px",
               fontWeight: "500",
-              marginLeft: "30px",
+              marginLeft: "0px",
               width: "100%",
             }}
             defaultSelectedKeys={["nftMarket"]}
@@ -246,7 +246,7 @@ const handleMediaQueryChange = (matches) => {
 };
 export const Latest = () =>(
   <div>
-  <Text style={{ display: "block", textAlign: "center", fontSize: "10px", }}>
+  <Text style={{ display: "block", textAlign: "center", fontSize: "13px", }}>
     <Text> Top collections over </Text>
     <a
       target="_blank"
