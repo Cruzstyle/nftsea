@@ -189,7 +189,7 @@ const [values, setValues] = useState(true);
               </>
             )}
            <div>
-            <MediaQuery minWidth={355} onChange={handleMediaQueryChange}>
+            <MediaQuery minWidth={1224} onChange={handleMediaQueryChange}>
             <div style={styles.banner}>
               <Image
                 preview={true}
@@ -218,7 +218,7 @@ const [values, setValues] = useState(true);
 
 
 
-              <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}>
+              <MediaQuery maxWidth={1224} onChange={handleMediaQueryChange}>
               <div style={{  display: "flex",
                 justifyContent: "space-evenly",
                 alignItems: "center",
@@ -269,7 +269,7 @@ const [values, setValues] = useState(true);
           {inputValue === "explore" &&
             NFTCollections?.map((nft, index) => (
              <div>
-          <MediaQuery minWidth={355} onChange={handleMediaQueryChange}>
+          <MediaQuery minWidth={1224} onChange={handleMediaQueryChange}>
               <Card
                 hoverable
                 actions={[
@@ -297,7 +297,7 @@ const [values, setValues] = useState(true);
               </MediaQuery>
 
 
-              <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}>
+              <MediaQuery maxWidth={1224} onChange={handleMediaQueryChange}>
                   <Card
                     hoverable
                     actions={[
@@ -398,7 +398,7 @@ const [values, setValues] = useState(true);
          )
           : (
          <div>
-          <MediaQuery minWidth={355} onChange={handleMediaQueryChange}>
+          <MediaQuery minWidth={1224} onChange={handleMediaQueryChange}>
           <Modal
             title={`Buy ${nftToBuy?.name} : ID ${nftToBuy?.token_id}   `}
             visible={visible}
@@ -505,7 +505,7 @@ const [values, setValues] = useState(true);
 
 
 
-          <MediaQuery maxWidth={355} onChange={handleMediaQueryChange}>
+          <MediaQuery maxWidth={1224} onChange={handleMediaQueryChange}>
           <Modal
             title={`Buy ${nftToBuy?.name} : ID ${nftToBuy?.token_id}   `}
             style={{fontSize: "5px"}}
