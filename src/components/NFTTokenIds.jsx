@@ -307,20 +307,20 @@ const [values, setValues] = useState(true);
                         />
                       </Tooltip>,
                     ]}
-                    style={{ width: "80px", border: "2px solid #e7eaf3" }}
+                    style={{ width: "90px", border: "2px solid #e7eaf3" }}
                     cover={
                       <Image
                         preview={false}
                         src={nft?.image || "error"}
                         fallback={fallbackImg}
                         alt=""
-                        style={{ height: "50px" }}
+                        style={{ height: "55px" }}
                       />
                     }
                     key={index}
 
                   >
-                    <Meta title={nft.name}
+                    <Meta description = {nft.name}
                     style={{ fontSize:"7px", fontWeight:"bold"}}
                     />
                   </Card>
