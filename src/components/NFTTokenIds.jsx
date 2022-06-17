@@ -234,7 +234,7 @@ const [values, setValues] = useState(true);
                   src={NFTTokenIds[0]?.image || "error"}
                   fallback={fallbackImg}
                   alt=""
-                   style={{  height: "7h5px",
+                   style={{  height: "75px",
                      width: "75px",
                      borderRadius: "50%",
                      positon: "relative",
@@ -307,7 +307,7 @@ const [values, setValues] = useState(true);
                         />
                       </Tooltip>,
                     ]}
-                    style={{ width: 80, border: "2px solid #e7eaf3" }}
+                    style={{ width: "80px", border: "2px solid #e7eaf3" }}
                     cover={
                       <Image
                         preview={false}
