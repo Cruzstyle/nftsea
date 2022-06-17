@@ -60,7 +60,7 @@ const styles = {
     alignItems: "center",
     fontSize: "7px",
     fontWeight: "200",
-    position: "auto",
+    position: "fixed",
   },
 };
 const App = () => {
@@ -114,7 +114,7 @@ const handleMediaQueryChange = (matches) => {
               <NavLink to="/Transactions">📑 Your Transactions</NavLink>
             </Menu.Item>
 
-          
+    <div style={styles.headerRight1}>          
           <Menu.Item key="xhain">
             <Chains />
           </Menu.Item>
@@ -124,7 +124,7 @@ const handleMediaQueryChange = (matches) => {
           <Menu.Item key="zccount">
             <Account />
           </Menu.Item>
-          
+          </div>
             </Menu>
             </MediaQuery>
 
