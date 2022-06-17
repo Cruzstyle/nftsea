@@ -314,7 +314,7 @@ const [values, setValues] = useState(true);
                         src={nft?.image || "error"}
                         fallback={fallbackImg}
                         alt=""
-                        style={{ height: "55px" }}
+                        style={{ height: "75px" }}
                       />
                     }
                     key={index}
