@@ -566,7 +566,7 @@ const [values, setValues] = useState(true);
 
             <button style={{
                     marginLeft: "20px",
-                    width:"40px",
+                    width:"46px",
                     height:"15px",
                     fontSize:"7px",
                      borderRadius: "5px",
