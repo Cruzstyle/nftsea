@@ -58,7 +58,7 @@ const styles = {
     display: "flex",
     gap: "4px",
     alignItems: "center",
-    fontSize: "7px",
+    fontSize: "9.5px",
     fontWeight: "200",
     position: "relative",
   },
