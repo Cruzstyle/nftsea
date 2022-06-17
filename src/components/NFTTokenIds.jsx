@@ -234,8 +234,8 @@ const [values, setValues] = useState(true);
                   src={NFTTokenIds[0]?.image || "error"}
                   fallback={fallbackImg}
                   alt=""
-                   style={{  height: "55px",
-                     width: "55px",
+                   style={{  height: "7h5px",
+                     width: "75px",
                      borderRadius: "50%",
                      positon: "relative",
                      marginTop: "-55px",
@@ -307,21 +307,21 @@ const [values, setValues] = useState(true);
                         />
                       </Tooltip>,
                     ]}
-                    style={{ width: 75, border: "2px solid #e7eaf3" }}
+                    style={{ width: 80, border: "2px solid #e7eaf3" }}
                     cover={
                       <Image
                         preview={false}
                         src={nft?.image || "error"}
                         fallback={fallbackImg}
                         alt=""
-                        style={{ height: "45px" }}
+                        style={{ height: "50px" }}
                       />
                     }
                     key={index}
 
                   >
                     <Meta title={nft.name}
-                    style={{ fontSize: "2px", fontWeight:"light"}}
+                    style={{ fontSize:"7px", fontWeight:"bold"}}
                     />
                   </Card>
              </MediaQuery>
