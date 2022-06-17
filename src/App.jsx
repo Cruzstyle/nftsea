@@ -60,7 +60,7 @@ const styles = {
     alignItems: "center",
     fontSize: "9.5px",
     fontWeight: "200",
-    position: "relative",
+    position: "static",
   },
 };
 const App = () => {
