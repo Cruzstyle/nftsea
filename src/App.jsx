@@ -114,8 +114,8 @@ const handleMediaQueryChange = (matches) => {
               <NavLink to="/Transactions">📑 Your Transactions</NavLink>
             </Menu.Item>
 
-          <div style={styles.headerRight1}>
-          <Menu.Item key="xhains">
+          
+          <Menu.Item key="xhain">
             <Chains />
           </Menu.Item>
           <Menu.Item key="yative">
@@ -124,7 +124,7 @@ const handleMediaQueryChange = (matches) => {
           <Menu.Item key="zccount">
             <Account />
           </Menu.Item>
-          </div>
+          
             </Menu>
             </MediaQuery>
 
