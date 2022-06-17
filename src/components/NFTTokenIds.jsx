@@ -235,7 +235,7 @@ const [values, setValues] = useState(true);
                   fallback={fallbackImg}
                   alt=""
                    style={{  height: "75px",
-                     width: "75px",
+                     width: "90px",
                      borderRadius: "50%",
                      positon: "relative",
                      marginTop: "-55px",
@@ -527,7 +527,7 @@ const [values, setValues] = useState(true);
           />
             <li style={{
                 marginTop:"8px",
-                marginLeft: "85px",
+                marginLeft: "95px",
                 listStyleType: "none",
             }}><img
               src={"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyNTZweCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTU2IDI1NiIgd2lkdGg9IjE1NnB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0iQ2xhc3NpYyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiPjxnIGlkPSJFdGhlcmV1bSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1NzAuMDAwMDAwLCAtNDEwLjAwMDAwMCkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1NzAuMDAwMDAwLCA0MTAuMDAwMDAwKSI+PHBhdGggZD0iTTAsMTI4IEw4MCwwIEw4MCw5My41MzU4MzcyIEwwLDEyOCBaIE0xNTYsMTI4IEw4MCw5My41ODA5NTczIEw4MCwwIEwxNTYsMTI4IFoiIGZpbGw9IiM4MjgzODQiIGlkPSJDb21iaW5lZC1TaGFwZSIvPjxwYXRoIGQ9Ik04MCwxNzYgTDAsMTMxLjAwMzk2IEw4MCw5NiBMODAsMTc2IFogTTE1NiwxMzEuMDExNDczIEw4MCwxNzYgTDgwLDk2IEwxNTYsMTMxLjAxMTQ3MyBaIiBmaWxsPSIjMzQzNTM1IiBpZD0iQ29tYmluZWQtU2hhcGUiLz48cGF0aCBkPSJNMCwxNDggTDgwLDE5NC4xODA3MTEgTDgwLDI1NiBMMCwxNDggWiBNMTU2LDE0OCBMODAsMjU2IEw4MCwxOTQuMTc1MzYxIEwxNTYsMTQ4IFoiIGZpbGw9IiM4MjgzODQiIGlkPSJDb21iaW5lZC1TaGFwZSIvPjxwb2x5Z29uIGZpbGw9IiMyRjMwMzAiIGlkPSJQYXRoLTMiIHBvaW50cz0iMTU2IDEyOCA4MCA5My41ODA5NTczIDgwIDAiLz48cG9seWdvbiBmaWxsPSIjMTMxMzEzIiBpZD0iUGF0aC01IiBwb2ludHM9IjE1NiAxMzEuMDExNDczIDgwIDk2IDgwIDE3NiIvPjxwb2x5Z29uIGZpbGw9IiMyRjMwMzAiIGlkPSJQYXRoLTciIHBvaW50cz0iMTU2IDE0OCA4MCAxOTQuMTc1MzYxIDgwIDI1NiIvPjwvZz48L2c+PC9nPjwvc3ZnPg=="}
@@ -538,10 +538,10 @@ const [values, setValues] = useState(true);
             /><li style={{
               listStyleType: "none",
               fontWeight: "bold",
-              fontSize:"5px",
+              fontSize:"7px",
             }} > {prix}</li></li>
             <li style={{
-              marginLeft: "85px",
+              marginLeft: "95px",
               marginTop:"11px",
               fontSize:"5px",
               listStyleType: "none",
@@ -549,10 +549,10 @@ const [values, setValues] = useState(true);
             }}>Owner :<li  style={{
               listStyleType: "none",
               fontWeight: "bold",
-              fontSize:"3.5px"
+              fontSize:"5.5px"
               }} > {owner}</li></li>
             <li style={{
-              marginLeft: "85px",
+              marginLeft: "95px",
               marginTop:"18px",
               listStyleType: "none",
               fontSize:"5px",
@@ -560,15 +560,15 @@ const [values, setValues] = useState(true);
             }}>TimeStamp :<li  style={{
               listStyleType: "none",
               fontWeight: "bold",
-              fontSize:"3.5px",
+              fontSize:"5.5px",
               }}  >
             {timeStamp}</li></li>
 
             <button style={{
                     marginLeft: "20px",
-                    width:"30px",
+                    width:"40px",
                     height:"15px",
-                    fontSize:"5px",
+                    fontSize:"7px",
                      borderRadius: "5px",
                      borderColor:"#48F8F8",
                      backgroundColor: " #9CF4F4 ",
@@ -595,7 +595,7 @@ const [values, setValues] = useState(true);
            width: "100%",
            floatRight: "30px",
            fontWeight: "light",
-           fontSize: "5px",
+           fontSize: "7px",
            marginTop: "3px",
            border: "1px solid #15b2e5",
            padding: "10px",
