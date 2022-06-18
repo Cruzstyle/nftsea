@@ -113,8 +113,7 @@ const handleMediaQueryChange = (matches) => {
             <Menu.Item key="transactions">
               <NavLink to="/Transactions">📑 Your Transactions</NavLink>
             </Menu.Item>
-
-    <div style={styles.headerRight1}>          
+         
           <Menu.Item key="xhain">
             <Chains />
           </Menu.Item>
@@ -124,7 +123,7 @@ const handleMediaQueryChange = (matches) => {
           <Menu.Item key="zccount">
             <Account />
           </Menu.Item>
-          </div>
+         
             </Menu>
             </MediaQuery>
 
