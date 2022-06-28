@@ -455,7 +455,7 @@ const [values, setValues] = useState(true);
             
             <li style={{
               marginLeft: "255px",
-              marginTop:"43px",
+              marginTop:"41.5px",
               listStyleType: "none",
               fontWeight: "bold",
             }}>Offer Expiration :<li  style={{
@@ -476,7 +476,7 @@ const [values, setValues] = useState(true);
            <input style={{
                     marginLeft: "115px",
                     }}  
-                    type="text"
+                    type="number"
                id="test"
                placeholder="Amount to Bid"
                readOnly></input>
@@ -586,7 +586,7 @@ const [values, setValues] = useState(true);
             
             <li style={{
               marginLeft: "95px",
-              marginTop:"21px",
+              marginTop:"19.5px",
               listStyleType: "none",
               fontSize:"5px",
               fontWeight: "light",
@@ -609,11 +609,10 @@ const [values, setValues] = useState(true);
            </button>
            <input style={{
                     marginLeft: "30px",
-                    width:"50px",
-                    hieght: "30px",
+                    hieght: "25x",
                     }}  
                id="test"
-               type="text"
+               type="number"
                placeholder="Amount to Bid"
                readOnly></input>
 
