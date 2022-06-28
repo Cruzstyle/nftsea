@@ -345,7 +345,7 @@ const [values, setValues] = useState(true);
                       }
                     />
                   </Tooltip>,
-                  <Tooltip title="Buy NFT">
+                  <Tooltip title="Bid NFT">
                     <ShoppingCartOutlined onClick={() => handleBuyClick(nft)} />
                   </Tooltip>,
                 ]}
@@ -370,10 +370,10 @@ const [values, setValues] = useState(true);
         </div>
         {getMarketItem(nftToBuy) ? (
           <Modal
-            title={`Buy ${nftToBuy?.name} #${nftToBuy?.token_id}   `}
+            title={`Bid ${nftToBuy?.name} #${nftToBuy?.token_id}   `}
             visible={visible}
             onCancel={() => setVisibility(false)}
-            okText="Buy"
+            okText="Bid"
           >
             <Spin spinning={loading}>
               <div
@@ -400,7 +400,7 @@ const [values, setValues] = useState(true);
          <div>
           <MediaQuery minWidth={1224} onChange={handleMediaQueryChange}>
           <Modal
-            title={`Buy ${nftToBuy?.name} : ID ${nftToBuy?.token_id}   `}
+            title={`Bid ${nftToBuy?.name} : ID ${nftToBuy?.token_id}   `}
             visible={visible}
             onCancel={() => setVisibility(false)}
             onOk={() => fetch()}
@@ -452,6 +452,18 @@ const [values, setValues] = useState(true);
               fontSize:"15px"
               }}  >
             {timeStamp}</li></li>
+            
+            <li style={{
+              marginLeft: "255px",
+              marginTop:"43px",
+              listStyleType: "none",
+              fontWeight: "bold",
+            }}>Offer Expiration :<li  style={{
+              listStyleType: "none",
+              fontWeight: "bold",
+              fontSize:"15px",
+              }}  >
+            24 hrs</li></li>
 
             <button style={{
                     marginLeft: "100px",
@@ -459,8 +471,15 @@ const [values, setValues] = useState(true);
                      borderColor:"#48F8F8",
                      backgroundColor: " #9CF4F4 ",
                     }}  onClick={() => fetch()} disabled={isFetching} >
-            Buy Asset
+            Bid Asset
            </button>
+           <input style={{
+                    marginLeft: "115px",
+                    }}  
+                    type="Search"
+               id="test"
+               placeholder="Amount to Bid"
+               readOnly>
 
           </ul>
 
@@ -507,7 +526,7 @@ const [values, setValues] = useState(true);
 
           <MediaQuery maxWidth={1224} onChange={handleMediaQueryChange}>
           <Modal
-            title={`Buy ${nftToBuy?.name} : ID ${nftToBuy?.token_id}   `}
+            title={`Bid ${nftToBuy?.name} : ID ${nftToBuy?.token_id}   `}
             style={{fontSize: "5px"}}
             visible={visible}
             onCancel={() => setVisibility(false)}
@@ -563,18 +582,40 @@ const [values, setValues] = useState(true);
               fontSize:"5.5px",
               }}  >
             {timeStamp}</li></li>
+            
+            
+            <li style={{
+              marginLeft: "95px",
+              marginTop:"21px",
+              listStyleType: "none",
+              fontSize:"5px",
+              fontWeight: "light",
+            }}>Offer Expiration :<li  style={{
+              listStyleType: "none",
+              fontWeight: "bold",
+              fontSize:"5.5px",
+              }}  >
+            24 hrs</li></li>
 
             <button style={{
                     marginLeft: "20px",
-                    width:"46px",
-                    height:"15px",
+                     fontWeight: "bold",
                     fontSize:"7px",
                      borderRadius: "5px",
                      borderColor:"#48F8F8",
                      backgroundColor: " #9CF4F4 ",
                     }}  onClick={() => fetch()} disabled={isFetching} >
-            Buy Asset
+            Bid Asset
            </button>
+           <input style={{
+                    marginLeft: "30px",
+                    width:"50px",
+                    hieght: "30px",
+                    }}  
+               id="test"
+               type="Search"
+               placeholder="Amount to Bid"
+               readOnly>
 
           </ul>
 
