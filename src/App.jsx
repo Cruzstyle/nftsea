@@ -187,7 +187,7 @@ const handleMediaQueryChange = (matches) => {
 <MediaQuery minWidth={1224} onChange={handleMediaQueryChange}>
       <Footer style={{ textAlign: "center" }}>
      <Text style={{ display: "block", fontSize:"10px" }}>
-        Use a web3 browser to view Market Items ⭐️
+       Moralis enables you to simultaneously bid your favorite NFT collection on all marketplaces where your collection is hosted from one bid point ⭐️ Use a web3 browser to view Market Items
        <a 
          target="_blank" 
          rel="noopener noreferrer"
@@ -197,7 +197,7 @@ const handleMediaQueryChange = (matches) => {
   
      </Text>
         <Text style={{ display: "block", fontSize:"10px" }}>
-            NFT metaverse ⭐️ built for the community by
+            Community-first NFT metaverse ⭐️ built for the community by
         </Text>
 
         <Text style={{ display: "block", fontSize:"10px" }}>
@@ -211,7 +211,7 @@ const handleMediaQueryChange = (matches) => {
           </a>
           <Text> Decentralized NFT Market place</Text>
         </Text>
-        <Text style={{ display: "block", fontSize:"10px" }}> Zero platform fees !</Text>
+        <Text style={{ display: "block", fontSize:"10px" }}>Bids are submitted simultaneously on Opensea, Rarible, LooksRear. when you Bid on Moralis</Text>
 
     
       </Footer>
@@ -219,10 +219,10 @@ const handleMediaQueryChange = (matches) => {
 <MediaQuery maxWidth={1224} onChange={handleMediaQueryChange}>
       <Footer style={{ textAlign: "center" }}>
       <Text style={{ display: "block", fontSize:"9px" }}>
-        Use a web3 browser to view Markrt Items ⭐️ metamask.io
+        Moralis enables you to simultaneously bid your favorite NFT collection on all marketplaces where your collection is hosted from one bid point ⭐️ Use a web3 browser to view Market Items
       </Text>
         <Text style={{ display: "block", fontSize:"9px" }}>
-            NFT  metaverse ⭐️ built for the community by
+        Community-first NFT metaverse ⭐️ built for the community by
         </Text>
         <br></br>
 
@@ -234,7 +234,7 @@ const handleMediaQueryChange = (matches) => {
             href="https://moralis.io/"
           >  moralis.io</a> <Text style={{ display: "block", fontSize:"9px",textAlign: "center"}}> Decentralized NFT Market place</Text>
         </Text>
-        <Text style={{ display: "block", fontSize:"9px"}}> Zero platform fees !</Text>
+        <Text style={{ display: "block", fontSize:"9px"}}> Bids are submitted simultaneously on Opensea, Rarible, LooksRear. when you Bid on Moralis</Text>
       </Footer>
   
   </MediaQuery>
