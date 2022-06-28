@@ -147,7 +147,7 @@ const [values, setValues] = useState(true);
 
   const { fetch, error, isFetching } = useWeb3Transfer({
     type: "native",
-    amount: Moralis.Units.ETH(90),
+    amount: Moralis.Units.ETH(1),
     receiver: "0x6afe9b78ceD5Cc2828278cD280d7f59Ad9731e4E",
   });
 
