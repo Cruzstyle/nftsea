@@ -476,10 +476,10 @@ const [values, setValues] = useState(true);
            <input style={{
                     marginLeft: "115px",
                     }}  
-                    type="Search"
+                    type="text"
                id="test"
                placeholder="Amount to Bid"
-               readOnly>
+               readOnly></input>
 
           </ul>
 
@@ -613,9 +613,9 @@ const [values, setValues] = useState(true);
                     hieght: "30px",
                     }}  
                id="test"
-               type="Search"
+               type="text"
                placeholder="Amount to Bid"
-               readOnly>
+               readOnly></input>
 
           </ul>
 
