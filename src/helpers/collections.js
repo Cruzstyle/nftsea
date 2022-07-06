@@ -48,11 +48,23 @@ export const networkCollections = {
       name: "PROOF Collective",
       addrs: "0x08D7C0242953446436F34b4C78Fe9da38c73668d",
     },
+     {
+      image:
+        "https://lh3.googleusercontent.com/0cOqWoYA7xL9CkUjGlxsjreSYBdrUBE0c6EO1COG4XE8UeP-Z30ckqUNiL872zHQHQU5MUNMNhfDpyXIP17hRSC5HQ=s168",
+      name: "ENS: Ethereum Name Service",
+      addrs: "0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85",
+    },
     {
       image:
         "https://lh3.googleusercontent.com/Mf4vImKbzrJUcj7f7RZNOl9iZSEEJgkvpiUp9ugXc9dcpxFe6fvVgxYcRmTI1PnvfL_X1bD3mH4e66j6aJhqLEYm0vvpC8Jy8XJNZOI=s130",
       name: "Bored Ape Chemistry Club",
       addrs: "0x22c36BfdCef207F9c0CC941936eff94D4246d14A",
+    },
+     {
+      image:
+        "https://openseauserdata.com/files/3c5f04e90a7caf0384bffc1e457fb309.jpg",
+      name: "God Hates NFTees",
+      addrs: "0xE6d48bF4ee912235398b96E16Db6F310c21e82CB",
     },
     {
       image:
@@ -62,7 +74,7 @@ export const networkCollections = {
     },
     {
       image:
-        "https://lh3.googleusercontent.com/XN0XuD8Uh3jyRWNtPTFeXJg_ht8m5ofDx6aHklOiy4amhFuWUa0JaR6It49AH8tlnYS386Q0TW_-Lmedn0UET_ko1a3CbJGeu5iHMg=s0",
+        "https://lh3.googleusercontent.com/H8jOCJuQokNqGBpkBN5wk1oZwO7LM8bNnrHCaekV2nKjnCqw6UB5oaH8XyNeBDj6bA_n1mjejzhFQUP3O1NfjFLHr3FOaeHcTOOT=s0",
       name: "Azuki",
       addrs: "0xED5AF388653567Af2F388E6224dC7C4b3241C544",
     },
