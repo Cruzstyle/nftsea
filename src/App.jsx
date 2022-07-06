@@ -187,7 +187,7 @@ const handleMediaQueryChange = (matches) => {
 <MediaQuery minWidth={1224} onChange={handleMediaQueryChange}>
       <Footer style={{ textAlign: "center" }}>
      <Text style={{ display: "block", fontSize:"10px" }}>
-       Moralis enables you to simultaneously bid your favorite NFT collection on all marketplaces where your collection is hosted from one bid point ⭐️ Use a web3 browser to view Market Items
+       Moralis enables you to simultaneously bid your favorite NFT collection <br></br> on all marketplaces where your collection is hosted from one bid point <br></br>⭐️ Use a web3 browser to view Market Items
        <a 
          target="_blank" 
          rel="noopener noreferrer"
