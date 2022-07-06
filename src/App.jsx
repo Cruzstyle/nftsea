@@ -226,7 +226,7 @@ const handleMediaQueryChange = (matches) => {
         <Text style={{ display: "block", fontSize:"9px" }}>
         Community-first NFT metaverse ⭐️ built for the community by
         </Text>
-        <br>
+        <br/>
 
         <Text style={{ display: "block", fontSize:"9px", textAlign: "center"}}>
 
