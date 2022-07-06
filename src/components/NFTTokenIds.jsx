@@ -473,13 +473,17 @@ const [values, setValues] = useState(true);
                     }}  onClick={() => fetch()} disabled={isFetching} >
             Bid Asset
            </button>
+           <form>
+           <div>
            <input style={{
                     marginLeft: "115px",
-                    }}  
+                    }}
+                    ref="number"
+                    number="number"
                     type="number"
-               id="test"
                placeholder="Amount to Bid"
-               readOnly></input>
+               ></input></div>
+               </form>
 
           </ul>
 
@@ -607,14 +611,19 @@ const [values, setValues] = useState(true);
                     }}  onClick={() => fetch()} disabled={isFetching} >
             Bid Asset
            </button>
+           <form>
+           <div>
            <input style={{
                     marginLeft: "30px",
                     hieght: "25x",
                     }}  
-               id="test"
+               ref="number"
+               number="number"
                type="number"
                placeholder="Amount to Bid"
-               readOnly></input>
+               ></input>
+               </div>
+               </form>
 
           </ul>
 
