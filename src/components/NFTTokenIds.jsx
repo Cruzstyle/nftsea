@@ -466,7 +466,7 @@ const [values, setValues] = useState(true);
             24 hrs</li></li>
 
             <button style={{
-                    marginLeft: "100px",
+                    marginLeft: "50px",
                      borderRadius: "5px",
                      borderColor:"#48F8F8",
                      backgroundColor: " #9CF4F4 ",
@@ -476,7 +476,7 @@ const [values, setValues] = useState(true);
            <form>
            <div>
            <input style={{
-                    marginLeft: "115px",
+                    marginLeft: "50px",
                     }}
                 
                     number="number"
@@ -602,7 +602,7 @@ const [values, setValues] = useState(true);
             24 hrs</li></li>
 
             <button style={{
-                    marginLeft: "20px",
+                    marginLeft: "10px",
                      fontWeight: "bold",
                     fontSize:"7px",
                      borderRadius: "5px",
@@ -614,8 +614,9 @@ const [values, setValues] = useState(true);
            <form>
            <div>
            <input style={{
-                    marginLeft: "30px",
+                    marginLeft: "10px",
                     hieght: "25x",
+                    width: "75px"
                     }}  
                
                number="number"
