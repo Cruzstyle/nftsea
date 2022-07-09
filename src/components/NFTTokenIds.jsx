@@ -464,10 +464,10 @@ const [values, setValues] = useState(true);
               fontSize:"15px",
               }}  >
             24 hrs</li></li>
-<div style={{ display: "inline"}}>
+
             
            <form>
-           <div>
+           <div style={{ display: "inline"}}>
            <input style={{
                     marginLeft: "50px",
                     }}
@@ -480,13 +480,14 @@ const [values, setValues] = useState(true);
                <button style={{
                      marginLeft: "70px",
                      hieght:"40px",
+                     display: "inline",
                      borderRadius: "5px",
                      borderColor:"#48F8F8",
                      backgroundColor: " #9CF4F4 ",
                     }}  onClick={() => fetch()} disabled={isFetching} >
             Bid Asset
            </button>
-</div>
+
           </ul>
 
 
