@@ -609,7 +609,7 @@ const [values, setValues] = useState(true);
            <input style={{
                     marginLeft: "10px",
                     hieght: "25x",
-                    width: "85px"
+                    width: "85px",
                     display: "inline",
                     }}  
                
