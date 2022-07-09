@@ -477,7 +477,7 @@ const [values, setValues] = useState(true);
                     number="number"
                     type="number"
                placeholder="Amount to Bid"
-               ></input></
+               ></input>
                </form>
                <button style={{
                     
