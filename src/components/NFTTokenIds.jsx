@@ -467,20 +467,23 @@ const [values, setValues] = useState(true);
 
             
            <form>
-           <div style={{ display: "inline"}}>
+          
            <input style={{
-                    marginLeft: "50px",
+                    marginLeft: "10px",
+                    float: "left",
+                    margin: "1.5%",
                     }}
                 
                     number="number"
                     type="number"
                placeholder="Amount to Bid"
-               ></input></div>
+               ></input></
                </form>
                <button style={{
-                     marginLeft: "70px",
+                    
                      hieght:"40px",
-                     display: "inline",
+                     float: "right",
+                    margin: "1.5%",
                      borderRadius: "5px",
                      borderColor:"#48F8F8",
                      backgroundColor: " #9CF4F4 ",
@@ -605,25 +608,27 @@ const [values, setValues] = useState(true);
 
             
            <form>
-           <div style={{ display: "inline"}}>
+           
            <input style={{
                     marginLeft: "10px",
                     hieght: "25x",
                     width: "85px",
-                    display: "inline",
+                    float: "left",
+                    margin: "1.5%",
                     }}  
                
                number="number"
                type="number"
                placeholder="Amount to Bid"
                ></input>
-               </div>
+     
                </form>
                
                <button style={{
                     marginLeft: "25px",
                      fontWeight: "bold",
-                     display: "inline",
+                     float: " right",
+                    margin: "1.5%",
                      hieght:"25px",
                     fontSize:"12px",
                      borderRadius: "5px",
