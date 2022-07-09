@@ -610,7 +610,7 @@ const [values, setValues] = useState(true);
                     marginLeft: "10px",
                     hieght: "25x",
                     width: "85px"
-                    display: "inline"
+                    display: "inline",
                     }}  
                
                number="number"
