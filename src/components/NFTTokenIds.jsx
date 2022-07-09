@@ -478,7 +478,7 @@ const [values, setValues] = useState(true);
            <input style={{
                     marginLeft: "115px",
                     }}
-                    ref="number"
+                
                     number="number"
                     type="number"
                placeholder="Amount to Bid"
@@ -617,7 +617,7 @@ const [values, setValues] = useState(true);
                     marginLeft: "30px",
                     hieght: "25x",
                     }}  
-               ref="number"
+               
                number="number"
                type="number"
                placeholder="Amount to Bid"
