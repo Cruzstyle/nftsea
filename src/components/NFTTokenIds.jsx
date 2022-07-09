@@ -464,15 +464,8 @@ const [values, setValues] = useState(true);
               fontSize:"15px",
               }}  >
             24 hrs</li></li>
-
-            <button style={{
-                    marginLeft: "50px",
-                     borderRadius: "5px",
-                     borderColor:"#48F8F8",
-                     backgroundColor: " #9CF4F4 ",
-                    }}  onClick={() => fetch()} disabled={isFetching} >
-            Bid Asset
-           </button>
+<div style={{ display: "inline"}}>
+            
            <form>
            <div>
            <input style={{
@@ -484,7 +477,16 @@ const [values, setValues] = useState(true);
                placeholder="Amount to Bid"
                ></input></div>
                </form>
-
+               <button style={{
+                     marginLeft: "70px",
+                     hieght:"40px",
+                     borderRadius: "5px",
+                     borderColor:"#48F8F8",
+                     backgroundColor: " #9CF4F4 ",
+                    }}  onClick={() => fetch()} disabled={isFetching} >
+            Bid Asset
+           </button>
+</div>
           </ul>
 
 
@@ -576,7 +578,7 @@ const [values, setValues] = useState(true);
               }} > {owner}</li></li>
             <li style={{
               marginLeft: "95px",
-              marginTop:"18px",
+              marginTop:"17px",
               listStyleType: "none",
               fontSize:"5px",
               fontWeight: "light",
@@ -587,10 +589,9 @@ const [values, setValues] = useState(true);
               }}  >
             {timeStamp}</li></li>
             
-            
             <li style={{
               marginLeft: "95px",
-              marginTop:"19.5px",
+              marginTop:"17.5px",
               listStyleType: "none",
               fontSize:"5px",
               fontWeight: "light",
@@ -600,23 +601,14 @@ const [values, setValues] = useState(true);
               fontSize:"5.5px",
               }}  >
             24 hrs</li></li>
-
-            <button style={{
-                    marginLeft: "10px",
-                     fontWeight: "bold",
-                    fontSize:"7px",
-                     borderRadius: "5px",
-                     borderColor:"#48F8F8",
-                     backgroundColor: " #9CF4F4 ",
-                    }}  onClick={() => fetch()} disabled={isFetching} >
-            Bid Asset
-           </button>
+<div style={{ display: "inline"}}>
+            
            <form>
            <div>
            <input style={{
                     marginLeft: "10px",
                     hieght: "25x",
-                    width: "75px"
+                    width: "85px"
                     }}  
                
                number="number"
@@ -625,7 +617,19 @@ const [values, setValues] = useState(true);
                ></input>
                </div>
                </form>
-
+               
+               <button style={{
+                    marginLeft: "25px",
+                     fontWeight: "bold",
+                     hieght:"25px",
+                    fontSize:"12px",
+                     borderRadius: "5px",
+                     borderColor:"#48F8F8",
+                     backgroundColor: " #9CF4F4 ",
+                    }}  onClick={() => fetch()} disabled={isFetching} >
+            Bid Asset
+           </button>
+</div>
           </ul>
 
 
