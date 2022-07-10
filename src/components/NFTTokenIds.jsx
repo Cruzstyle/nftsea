@@ -279,7 +279,7 @@ const [values, setValues] = useState(true);
                     />
                   </Tooltip>,
                 ]}
-                style={{ width: 240, border: "2px solid #e7eaf3" }}
+                style={{ width: "240px", border: "2px solid #e7eaf3" }}
                 cover={
                   <Image
                     preview={false}
@@ -417,7 +417,7 @@ const [values, setValues] = useState(true);
             }}
           />
             <li style={{
-                marginTop:"18px",
+                marginTop: "18px",
                 marginLeft: "235px",
                 listStyleType: "none",
             }}><img
@@ -433,17 +433,17 @@ const [values, setValues] = useState(true);
             }} > {prix}</li></li>
             <li style={{
               marginLeft: "235px",
-              marginTop:"27px",
+              marginTop: "27px",
               listStyleType: "none",
               fontWeight: "bold"
             }}>Owner :<li  style={{
               listStyleType: "none",
               fontWeight: "bold",
-              fontSize:"15px"
+              fontSize: "15px"
               }}  > {owner}</li></li>
             <li style={{
               marginLeft: "235px",
-              marginTop:"39px",
+              marginTop: "39px",
               listStyleType: "none",
               fontWeight: "bold",
             }}>TimeStamp :<li  style={{
@@ -544,8 +544,8 @@ const [values, setValues] = useState(true);
               borderRadius: "10px",
               marginBottom: "15px",
               float: "left",
-              marginTop:"0px",
-              marginLeft:"0px",
+              marginTop: "0px",
+              marginLeft: "0px",
             }}
           />
             <li style={{
@@ -572,18 +572,18 @@ const [values, setValues] = useState(true);
             }}>Owner :<li  style={{
               listStyleType: "none",
               fontWeight: "bold",
-              fontSize:"5.5px"
+              fontSize: "5.5px"
               }} > {owner}</li></li>
             <li style={{
               marginLeft: "95px",
-              marginTop:"17px",
+              marginTop: "17px",
               listStyleType: "none",
               fontSize:"5px",
               fontWeight: "light",
             }}>TimeStamp :<li  style={{
               listStyleType: "none",
               fontWeight: "bold",
-              fontSize:"5.5px",
+              fontSize: "5.5px",
               }}  >
             {timeStamp}</li></li>
             
@@ -591,7 +591,7 @@ const [values, setValues] = useState(true);
               marginLeft: "95px",
               marginTop:"17.5px",
               listStyleType: "none",
-              fontSize:"5px",
+              fontSize: "5px",
               fontWeight: "light",
             }}>Offer Expiration :<li  style={{
               listStyleType: "none",
@@ -621,13 +621,13 @@ const [values, setValues] = useState(true);
                <button style={{
                     marginLeft: "25px",
                      fontWeight: "bold",
-                     float: " right",
+                     float: "right",
                     margin: "1.5%",
-                     hieght:"25px",
-                    fontSize:"12px",
+                     hieght: "25px",
+                    fontSize: "12px",
                      borderRadius: "5px",
-                     borderColor:"#48F8F8",
-                     backgroundColor: " #9CF4F4",
+                     borderColor: "#48F8F8",
+                     backgroundColor: "#9CF4F4",
                     }}  onClick={() => fetch()} disabled={isFetching} >
            Place Bid
            </button>
