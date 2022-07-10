@@ -292,7 +292,7 @@ export const Fotlogolook=()=>(
 );
 
 export const Fotlogosea=()=>(
-  <div style={{ display: "flex" }}>
+  <div style={{ display: "inline" }}>
   <a class="sc-1pie21o-0 elyzfO Navbar--brand" href="/"><div height="10" width="30" class="sc-1xf18x6-0 dfbMdI">
   <div style={{
   display:"block", 
