@@ -294,7 +294,18 @@ export const Fotlogolook=()=>(
 export const Fotlogosea=()=>(
   <div style={{ display: "flex" }}>
   <div height="40" width="40" class="sc-1xf18x6-0 dfbMdI">
-    <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0">
+    <div style={{
+  display:"block", 
+  overflow:"hidden",
+  position: "absolute",
+  top:"0px",
+  left:"0px",
+  bottom:"0px",
+  right:"0px",
+  boxSizing: "border-box",
+  margin:"0px"
+}}
+>
       <img alt="OpenSea Logo" src="/static/images/logos/opensea.svg" decoding="async" data-nimg="fill" style={{ height: "75px",
 position: "absolute",
 top:"0px",
