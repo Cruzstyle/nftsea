@@ -239,7 +239,7 @@ const handleMediaQueryChange = (matches) => {
       </a> 
            <Fotlogolook/>
               <Fotlogorari/>
-              <Fotlogosea/>
+      
              
 <Text style={{ display: "block", fontSize:"9px",textAlign: "center"}}> Decentralized NFT Market place</Text>
         </Text>
@@ -291,55 +291,7 @@ export const Fotlogolook=()=>(
    </div> 
 );
 
-export const Fotlogosea=()=>(
-  <div style={{ display: "inline" }}>
-  <div style={{
-  display:"block", 
-  overflow:"hidden",
-  position: "absolute",
-  top:"0px",
-  left:"0px",
-  bottom:"0px",
-  right:"0px",
-  boxSizing: "border-box",
-  margin:"0px"
-}}>
-<img alt="OpenSea Logo" src="/static/images/logos/opensea.svg" decoding="async" data-nimg="fill"
-  style={{ height: "17px",
-position: "absolute",
-float: "right",
-top:"0px",
-left: "0px",
-bottom: "0px", right: "0px",
-boxSizing: "border-box",
-padding:"0px", border: "none",
-margin:"auto", display: "block", width:"0px",
-height: "0px", minWidth:"100%",maxWidth: "100%", minHeight: "100%",
-maxHeight: "100%" }}
- />
-<noscript>
-<img alt="OpenSea Logo" src="/static/images/logos/opensea.svg" decoding="async" data-nimg="fill" style={{
-  position: "absolute",
-  top:"0px",
-  left:"0px",
-  bottom:"0px",
-  right:"0px",
-  boxSizing:"border-box",
-  padding:"0px",
-  border:"none",
-  margin: "auto",
-  display: "block",
-  width: "0px",
-  height: "0px",
-  minWidth: "100%",
-  maxWidth:"100%",
-  minHeight: "100%",
-  maxHeight: "100%"
-}}  loading="lazy"/>
-</noscript></div>
-    
-    </div> 
-    );
+
 
 export const Fotlogorari = () => (
    <div style={{ display: "inline" }}>
