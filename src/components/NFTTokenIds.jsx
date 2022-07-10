@@ -443,7 +443,7 @@ const [values, setValues] = useState(true);
               }}  > {owner}</li></li>
             <li style={{
               marginLeft: "235px",
-              marginTop: "39px",
+              marginTop: "33px",
               listStyleType: "none",
               fontWeight: "bold",
             }}>TimeStamp :<li  style={{
@@ -454,8 +454,8 @@ const [values, setValues] = useState(true);
             {timeStamp}</li></li>
             
             <li style={{
-              marginLeft: "255px",
-              marginTop:"41.5px",
+              marginLeft: "235px",
+              marginTop:"36px",
               listStyleType: "none",
               fontWeight: "bold",
             }}>Offer Expiration :<li  style={{
@@ -470,6 +470,7 @@ const [values, setValues] = useState(true);
           
            <input style={{
                     marginLeft: "10px",
+                    marginBottom: "10px",
                     float: "left",
                     margin: "1.5%",
                     }}
@@ -481,6 +482,7 @@ const [values, setValues] = useState(true);
                </form>
                <button style={{ 
                      hieght:"40px",
+                     marginBottom: "10px",
                      float: "right",
                     margin: "1.5%",
                      borderRadius: "5px",
@@ -605,6 +607,7 @@ const [values, setValues] = useState(true);
            
            <input style={{
                     marginLeft: "10px",
+                    marginBottom: "10px",
                     hieght: "25x",
                     width: "85px",
                     float: "left",
@@ -620,6 +623,7 @@ const [values, setValues] = useState(true);
                
                <button style={{
                     marginLeft: "25px",
+                     marginBottom: "10px",
                      fontWeight: "bold",
                      float: "right",
                     margin: "1.5%",
