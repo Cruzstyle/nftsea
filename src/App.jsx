@@ -316,7 +316,7 @@ padding:"0px", border: "none",
 margin:"auto", display: "block", width:"0px",
 height: "0px", minWidth:"100%",maxWidth: "100%", minHeight: "100%",
 maxHeight: "100%" }}
- >
+ />
 <noscript>
 <img alt="OpenSea Logo" src="/static/images/logos/opensea.svg" decoding="async" data-nimg="fill" style={{
   position: "absolute",
