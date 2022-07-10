@@ -609,7 +609,7 @@ const [values, setValues] = useState(true);
                     marginLeft: "10px",
                     marginBottom: "18px",
                     hieght: "25x",
-                    width: "100%",
+                    width: "90px",
                     float: "left",
                     margin: "1.5%",
                     }}  
@@ -623,7 +623,7 @@ const [values, setValues] = useState(true);
                
                <button style={{
                     marginLeft: "25px",
-                     marginBottom: "100%",
+                     marginBottom: "18px",
                      fontWeight: "bold",
                      float: "right",
                     margin: "1.5%",
