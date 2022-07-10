@@ -294,9 +294,37 @@ export const Fotlogosea=()=>(
   <div style={{ display: "flex" }}>
   <div height="40" width="40" class="sc-1xf18x6-0 dfbMdI">
     <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0">
-      <img alt="OpenSea Logo" src="/static/images/logos/opensea.svg" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" />
+      <img alt="OpenSea Logo" src="/static/images/logos/opensea.svg" decoding="async" data-nimg="fill" style={{ height: "75px",
+position: "absolute",
+top:"0px",
+left: "0px",
+bottom: "0px", right: "0px",
+boxSizing: "border-box",
+padding:"0px", border: "none",
+margin:"auto", display: "block",width:"0px",
+height: "0px", min-width:"100%",maxWidth: "100%", minHeight: "100%",
+maxHeight: "100%"
+}}
+ />
       <noscript>
-    <img alt="OpenSea Logo" src="/static/images/logos/opensea.svg" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy" />
+    <img alt="OpenSea Logo" src="/static/images/logos/opensea.svg" decoding="async" data-nimg="fill" style={{
+  position: "absolute",
+  top:"0px",
+  left:"0px",
+  bottom:"0px",
+  right:"0px",
+  boxSizing:"border-box",
+  padding:"0px",
+  border:"none",
+  margin: "auto",
+  display: "block",
+  width: "0px",
+  height: "0px",
+  minWidth: "100%",
+  maxWidth:"100%",
+  minHeight: "100%",
+  maxHeight: "100%"
+}} loading="lazy" />
       </noscript></div></div>
     </div> 
     );
