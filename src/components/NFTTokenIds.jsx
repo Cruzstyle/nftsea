@@ -349,7 +349,7 @@ const [values, setValues] = useState(true);
                     <ShoppingCartOutlined onClick={() => handleBuyClick(nft)} />
                   </Tooltip>,
                 ]}
-                style={{ width: 240, border: "2px solid #e7eaf3" }}
+                style={{ width: "240px", border: "2px solid #e7eaf3" }}
                 cover={
                   <Image
                     preview={false}
@@ -479,26 +479,20 @@ const [values, setValues] = useState(true);
                placeholder="Amount to Bid"
                ></input>
                </form>
-               <button style={{
-                    
+               <button style={{ 
                      hieght:"40px",
                      float: "right",
                     margin: "1.5%",
                      borderRadius: "5px",
                      borderColor:"#48F8F8",
-                     backgroundColor: " #9CF4F4 ",
+                     backgroundColor: " #9CF4F4",
                     }}  onClick={() => fetch()} disabled={isFetching} >
-            Bid Asset
+            Place Bid
            </button>
 
           </ul>
 
-
-
-
            <div>
-
-
             </div>
            <div>
            <ul>
@@ -633,9 +627,9 @@ const [values, setValues] = useState(true);
                     fontSize:"12px",
                      borderRadius: "5px",
                      borderColor:"#48F8F8",
-                     backgroundColor: " #9CF4F4 ",
+                     backgroundColor: " #9CF4F4",
                     }}  onClick={() => fetch()} disabled={isFetching} >
-            Bid Asset
+           Place Bid
            </button>
 
           </ul>
