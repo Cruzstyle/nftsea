@@ -627,11 +627,12 @@ const [values, setValues] = useState(true);
                      fontWeight: "bold",
                      float: "right",
                     margin: "1.5%",
-                     hieght: "25px",
-                    fontSize: "12px",
+                     hieght: "30px",
+                    fontSize: "15px",
+                    fontColor: "#FFFFFF",
                      borderRadius: "5px",
-                     borderColor: "#48F8F8",
-                     backgroundColor: "#9CF4F4",
+                     borderColor: "#42d4f5",
+                     backgroundColor: "#42aaf5",
                     }}  onClick={() => fetch()} disabled={isFetching} >
            Place Bid
            </button>
@@ -656,7 +657,7 @@ const [values, setValues] = useState(true);
            floatRight: "30px",
            fontWeight: "light",
            fontSize: "7px",
-           marginTop: "45px",
+           marginTop: "40px",
            border: "1px solid #15b2e5",
            padding: "10px",
            textAlign: "center",
